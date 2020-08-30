@@ -1,0 +1,26 @@
+<section class="container">
+  <div class="py-5 text-center">
+    <h2>Hello There!</h2>
+    <p class="lead">This is a task demonstrating my knowledge developing applications with Angular.</p>
+  </div>
+</section>
+<section class="container">
+  <div class="mb-3">
+    <label for="input">Input:</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+      </div>
+      <input type="text" class="form-control is-invalid" style="border-radius: 4px" id="input" [(ngModel)]="input"
+             (ngModelChange)="inputChange()">
+      <small *ngIf="!correctInput" class="invalid-feedback">Error: invalid value provided.</small>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="output">Output:</label>
+    <input type="text" class="form-control" id="output" disabled value={{output}}>
+  </div>
+</section>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  © MyWebsite 2020
+</footer>
